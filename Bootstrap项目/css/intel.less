@@ -1,0 +1,89 @@
+@import "bootstrap.less";
+body{
+    margin-top: @navbar-height;
+}
+.content{
+    background:@blue-dark;
+    color:@text-color-light;
+    a{
+      color:@text-color-light;
+      &:hover{
+        color:@blue-lighter;
+      }
+    }
+}
+.content>.container>.row{
+    margin-bottom:20px;
+}
+.dropdown>a>span{
+    display:inline-block;
+    width:20px;
+    height:8px;
+    background:url(../img/sprite-carets.png) no-repeat 20px -214px;
+}
+a[class="glyphicon glyphicon-search navbar-toggle"]{
+   color:@text-color-light;
+ }
+@setmenu-width:25em;
+.setmenu{
+  width:@setmenu-width !important;
+  color:@text-color-light;
+  padding:0 10px;
+}
+.setmenu-left{
+  width:@setmenu-width+5em !important;
+  padding:0 10px;
+  text-align: center;
+}
+.setmenu-left>.row>div{
+  height:2em;
+  a{
+    color:@text-color-light;
+  }
+}
+.navbar>.container>.navbar-header>.navbar-brand{
+    display:inline-block;
+    width: 75px;
+    height:50px;
+    margin-left: 0px;
+    background:url(../img/hdr-spr.png) no-repeat 0 -508px;
+}
+.vit{
+    padding-right: 5px;
+    border-right:2px solid @text-color-light;
+    color:@text-color-light;
+}
+
+.mask-container{
+    position:relative;
+    overflow:hidden;
+}
+.mask{
+    position:absolute;
+    top:80%;
+    left:0;
+    height:100%;
+    width:100%;
+    color:#fff;
+    background:rgba(0,0,0, .7);
+    transition:top .15s linear;
+}
+@media screen and (min-width:768px) {
+   .pos{
+       position:relative;
+   }
+    .special{
+        position:absolute;
+        bottom:2em;
+        left:3em;
+        color:#fff;
+    }
+}
+.copyright{
+  color:#bbb;
+}
+.adjustbox{
+  margin-top: 2em;
+  padding:2em 0 0 2em;
+}
+
